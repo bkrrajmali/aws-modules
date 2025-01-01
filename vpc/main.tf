@@ -4,3 +4,7 @@ resource "aws_vpc" "main" {
   enable_dns_hostnames = var.enable_dns_hostnames
   tags = var.tags
 }
+
+output "vpc_id" {
+  value = aws_vpc.main.id
+}
