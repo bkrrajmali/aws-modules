@@ -1,10 +1,12 @@
-variable "cidr_block" {}
-variable "enable_dns_support" {
-  default = true
+variable "cidr_block" {
+  description = "The CIDR block for the VPC"
+  type        = string
 }
-variable "enable_dns_hostnames" {
-  default = true
-}
+
 variable "tags" {
-  default = {}
+  description = "A map of tags to assign to the VPC"
+  type        = map(string)
+  default     = {}
 }
+
+
