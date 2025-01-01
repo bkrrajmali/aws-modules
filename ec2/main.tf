@@ -7,6 +7,3 @@ resource "aws_instance" "main" {
   tags = var.tags
 }
 
-output "public_ip" {
-  value = aws_instance.main.public_ip
-}
