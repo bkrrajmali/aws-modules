@@ -4,10 +4,11 @@ variable "cidr_block" {
 }
 
 variable "tags" {
-  description = "A map of tags to assign to resources"
+  description = "A map of tags to assign to the VPC"
   type        = map(string)
   default     = {}
 }
+
 
 variable "enable_dns_support" {
   default = true
